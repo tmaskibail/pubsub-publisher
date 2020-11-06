@@ -1,0 +1,102 @@
+[
+  {
+    "name": "event_timestamp",
+    "description": "Pub/Sub event timestamp",
+    "mode": "REQUIRED",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "deviceId",
+    "description": "",
+    "mode": "REQUIRED",
+    "type": "STRING"
+  },
+  {
+    "name": "osVersion",
+    "description": "",
+    "mode": "NULLABLE",
+    "type": "STRING"
+  },
+  {
+    "name": "stateCode",
+    "description": "",
+    "mode": "NULLABLE",
+    "type": "INT64"
+  },
+  {
+    "name": "deviceUptimeInMins",
+    "description": "",
+    "mode": "NULLABLE",
+    "type": "INT64"
+  },
+  {
+    "name": "products",
+    "description": "",
+    "mode": "REPEATED",
+    "type": "STRUCT",
+    "fields": [
+      {
+        "name": "productId",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+      },
+      {
+        "name": "productCategory",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+      },
+      {
+        "name": "size",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+      },
+      {
+        "name": "type",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+      }
+    ]
+  },
+  {
+    "name": "type",
+    "description": "",
+    "mode": "NULLABLE",
+    "type": "STRING"
+  },
+  {
+    "name": "metadata",
+    "description": "",
+    "mode": "NULLABLE",
+    "type": "STRUCT",
+    "fields": [
+      {
+        "name": "locale",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+      },
+      {
+        "name": "cpuMax",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "INT64"
+      },
+      {
+        "name": "memoryMax",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "INT64"
+      }
+    ]
+  },
+  {
+    "name": "purchaseTimestamp",
+    "description": "",
+    "mode": "NULLABLE",
+    "type": "STRING"
+  }
+]
