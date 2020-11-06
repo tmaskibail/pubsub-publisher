@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class PubsubPublisherApplication implements CommandLineRunner {
     private static final Logger LOG = LoggerFactory.getLogger(PubsubPublisherApplication.class);
-    private static final String PROJECT_ID = "tmaskibail-sandbox";
+    private static final String PROJECT_ID = "xxxx";
     private static final String TOPIC_ID = "records";
 
     public static void main(String[] args) {
